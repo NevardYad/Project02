@@ -1,0 +1,6 @@
+ # ignore Node module
+ node_modules
+
+ #ignore Styles
+ ui/*.scss
+ ui/*.css
