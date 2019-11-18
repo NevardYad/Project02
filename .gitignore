@@ -1,5 +1,5 @@
  # ignore Node module
- node_modules
+ dir_to /node_modules
 
  #ignore Styles
  
