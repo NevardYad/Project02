@@ -1,0 +1,122 @@
+/* Coolors Exported Palette - coolors.co/f7b538-a50104-474448-e1efe6-000000 */
+
+/* RGB */
+$meatbrwn: rgba(247, 181, 56, 1);
+$darkcndyappl: rgba(165, 1, 4, 1);
+$arsenic: rgba(71, 68, 72, 1);
+$alabaster: rgba(225, 239, 230, 1);
+$black: rgba(0, 0, 0, 1);
+$mobile: "only screen and (max-width: 768px)";
+
+html {
+    background-color: $black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $darkcndyappl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 1.5;
+}
+article ul li{
+    list-style-type: none;
+}
+body > header > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+}
+
+main,
+body > header > nav {
+    clear: both;
+}
+
+body > header > nav li {
+    display: block;
+    float: left;
+    width: 33.33334%;
+    background-color: $meatbrwn;
+    color: $darkcndyappl;
+    line-height: 2;
+    font-weight: bold;
+    border-bottom: black solid 2px;
+}
+
+body > header > nav a {
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: $darkcndyappl;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    clear: both;
+}
+
+footer {
+    clear: both;
+}
+
+nav a:hover {
+    color: $meatbrwn;
+    background-color: $arsenic;
+}
+
+nav a.active {
+    color: #24487C;
+    background-color: #E2D2C5;
+}
+
+article {
+    padding: 1rem;
+    text-align: center;
+}
+article img {
+    width: 50%;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    line-height: 2;
+    color: #E2D2C5;
+    background-color: #C0755E;
+}
+
+footer address {
+    text-align: center;
+    font-style: normal;
+}
+
+@media #{$mobile} {
+    body{
+    width: 100%;
+    max-width: 100%;
+    min-width: 250px;
+    margin: 0;
+    }
+    body header nav ul li {
+       width: 100%;
+       
+    }
+    
+}
