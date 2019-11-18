@@ -1,5 +1,5 @@
 ---
 title: Chess Boxing | Home
-banner: 
+banner: piotr-makowski-SIKCOftUa8Y-unsplash.jpg
 ---
-# Sport
+# Chess Boxing
