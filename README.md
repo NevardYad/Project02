@@ -6,6 +6,8 @@
 
 - 11/18/19 made all of the different branches and started working on my css and making sure my gitignore was working
 
+- 11/20/19 had an issue with git and gitignore
+
 ## Picture Attribution
 ![Photo by Piotr Makowski on Unsplash](images/piotr-makowski-SIKCOftUa8Y-unsplash.jpg)
 Photo by Piotr Makowski on Unsplash
