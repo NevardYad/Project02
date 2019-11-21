@@ -4,6 +4,9 @@ banner:
 template: page
 ---
 
+
+![Photo by NeONBRAND on Unsplash](images/neonbrand-WwrQnL0Gi1c-unsplash.jpg)
+
 ## Overview
 
 Chess Boxing is a game comprised of 11 rounds (6 chess and 5 boxing alternating)
