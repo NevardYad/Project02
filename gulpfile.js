@@ -6,6 +6,7 @@ const terser = require('gulp-terser');
 const concat = require('gulp-concat');
 const markdown = require('gulp-markdown');
 const wrap = require('gulp-wrap');
+const fs = require('fs');
 const frontMatter = require('gulp-front-matter');
 
 
@@ -15,12 +16,23 @@ function css(){
     .pipe(dest('prod/ui'));
 }
 
-function html(){
- return src('app/pages/**/*.md')
- .pipe(frontMatter())
- .pipe(markdown())
- .pipe(wrap({src:'app/templates/layout.html'}))
- .pipe(dest('prod'));
+function html() {
+  return src('app/pages/**/*.md')
+    .pipe(frontMatter())
+    .pipe(markdown())
+    .pipe(
+      wrap(
+        data =>
+          fs
+            .readFileSync(
+              'app/templates/' + data.file.frontMatter.template + '.html'
+            )
+            .toString(),
+        null,
+        { engine: 'nunjucks' }
+      )
+    )
+    .pipe(dest('prod'));
 }
 
 function js(){

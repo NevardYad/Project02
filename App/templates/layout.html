@@ -9,29 +9,9 @@
 </head>
 
 <body>
-    <header>
-        <img src= images/${file.frontMatter.banner} alt="${file.frontMatter}" />
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="how.html">Rules</a>
-                </li>
-                <li>
-                    <a href="champs.html">Hall Of Fame</a>
-                </li>
-                <li>
-                    <a href="upcoming.html">Upcoming Events</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            ${contents}
-        </article>
+    {% include "app/templates/header.html" %}
+    
+    {% block main %}Default Content{% endblock %}
     </main>
     <footer>
         <address>1234 Elm Street, Windsor ON | 519-555-1212</address>
